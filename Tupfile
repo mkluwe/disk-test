@@ -1,0 +1,2 @@
+ : foreach *.cpp |> g++ -std=c++17 -Wall -c %f -o %o |> %B.o
+ : *.o |> g++ %f -o %o -lstdc++fs |> disk-test
